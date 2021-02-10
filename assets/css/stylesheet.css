@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Afectando etiqueta*/
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    height: auto;
+    background-color: black;
+    color: darkcyan;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+nav{
+    width: auto;
+    color: white;
+}
+
+nav ul li {
+    display:inline-block ;
+  
+    list-style: none;
+}
+nav a{
+color: white;
+text-decoration: none;
+display: block;
+padding: 20px;
+transition: 0.5s;
+}
+nav a:hover{
+   background-color:red;
+}
+/*Afectando Clase*/
+main{
+    width: 90vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+    background-color: #333;
+    color:rgba(255, 255, 255, 0.377);
+    padding: 25px;
+    border-radius: 20px;
+}
