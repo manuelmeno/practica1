@@ -1,11 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Brygada+1918&family=Hanalei&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 /*Afectando etiqueta*/
+
+/*
+font-family: 'Benne', serif;
+font-family: 'Brygada 1918', serif;
+font-family: 'Hanalei', cursive;
+*/
+
 html{
     scroll-behavior: smooth;
+}
+
+h1{
+    font-family:'Benne',sans-serif ;
+}
+h2,h3,h4{
+    font-family: 'Brygada 1918',sans-serif;
+}
+p,a,table{
+
+    font-family: 'Hanaleo',sans-serif;
 }
 
 header{
@@ -45,6 +64,7 @@ main{
     justify-content: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 section{
@@ -56,3 +76,79 @@ section{
     padding: 25px;
     border-radius: 20px;
 }
+
+#welcome
+{
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    background-image: url(../img/imagen2.jpg);
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    text-align: center;
+    background-position: center;
+}
+#aboutMe
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#profilePic
+{
+    width: 400px;
+    height: 400px;
+    background-color:black ;
+    background-image: url(../img/imagen1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    overflow:hidden ;
+    box-shadow:  0px 0px 100px rgb(0,0,0,0.9)
+}
+
+#social {
+    margin-top: 15px;
+}
+
+#social li {
+    display: inline-block;
+}
+
+#social li a {
+    font-size: x-large;
+    color: white;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+#social li a.facebook :hover {
+    color:blue;
+    transition: 0.5s;
+}
+
+#social li a.youtube :hover {
+    color: red;
+    transition: 0.5s;
+}
+
+#social li a.github :hover {
+    color: green;
+    transition: 0.5s;
+}
+
