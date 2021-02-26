@@ -18,13 +18,26 @@ html{
 
 h1{
     font-family:'Benne',sans-serif ;
+    animation: cambioletra ;
+    animation-duration: 4s;
+  animation-iteration-count: infinite;
+    
 }
 h2,h3,h4{
     font-family: 'Brygada 1918',sans-serif;
+    animation: cambioletra ;
+    animation-duration: 4s;
+  animation-iteration-count: infinite;
+    
 }
 p,a,table{
 
     font-family: 'Hanaleo',sans-serif;
+
+    animation: cambioletra ;
+    animation-duration: 4s;
+  animation-iteration-count: infinite;
+    
 }
 
 header{
@@ -150,9 +163,19 @@ section{
     width: 80%;
     height: auto;
     background-color: #333;
-    color:rgba(255, 255, 255, 0.377);
+    color:rgb(0, 0, 0);
     padding: 25px;
     border-radius: 20px;
+
+
+    animation: cambiocolor ;
+    animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+span
+{
+    font-weight: lighter;
 }
 /* Media mediaquery, prueba de pantalla
 @media (max-width:800px)
@@ -303,4 +326,59 @@ section{
         {
             background-color:  rgba(220, 43, 20, 0.445);
         }
+}
+
+/*Aplicando Animaciones*/
+@keyframes cambiocolor
+{
+    14.2857142857%{
+        background-color:red;
+
+        
+    }
+    
+
+    28.5714285714%{
+        background-color:orange;
+        
+    }
+
+    42.8571428571%
+    {
+        background-color:yellow;
+        
+    }
+
+    57.1428571428%
+    {
+        background-color:green;
+        
+    }
+    71.4285714285%{
+        background-color:cyan;
+      
+    }
+    85.7142857142%
+    {
+        background-color:indigo;
+       
+
+    }
+    100%
+    {
+        background-color:purple;
+        
+    }
+
+
+}
+
+@keyframes cambioletra
+{
+    from{
+            font-weight: lighter
+    }
+    to{
+        font-weight: bolder;
+    }
 }
